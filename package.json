@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "serve:uimodule": "ui5 serve --config=uimodule/ui5.yaml",
     "build:uimodule": "ui5 build --config=uimodule/ui5.yaml --clean-dest --dest uimodule/dist --include-task=generateManifestBundle",
-    "predeploy": "npm run build:uimobile",
+    "predeploy": "npm run build:uimodule",
     "deploy": "gh-pages -d uimodule/dist"
   },
   "devDependencies": {
