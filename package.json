@@ -1,6 +1,6 @@
 {
   "name": "site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://cube-consultants.github.io/sites",
   "scripts": {
     "start": "ui5 serve --config=uimodule/ui5.yaml  --open index.html",
