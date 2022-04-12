@@ -1,0 +1,8 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core">
+  <Bar design="Footer">
+    <contentLeft></contentLeft>
+    <contentRight>
+      <Button text="{i18n>footer.contactUs}" icon="sap-icon://paper-plane" iconFirst="false" type="Accept" press="onContactUs" />
+    </contentRight>
+  </Bar>
+</c:FragmentDefinition>

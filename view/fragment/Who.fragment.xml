@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+  <Panel class="p0">
+    <headerToolbar>
+      <Toolbar width="100%" design="Solid" class="toolbarSection">
+        <content>
+          <Title level="H2" text="{i18n>who.title}" titleStyle="H3" />
+        </content>
+      </Toolbar>
+    </headerToolbar>
+    <content>
+      <layout:BlockLayout background="Accent">
+        <layout:BlockLayoutRow rowColorSet="ColorSet2">
+          <layout:BlockLayoutCell>
+            <core:HTML content="&lt;p class=&quot;who-text&quot;&gt;&lt;span class=&quot;who-title&quot;&gt;Cube Consultants&lt;/span&gt;  opera nel settore dell'Information Technology, nasce dall'iniziativa di un gruppo di professionisti con una lunga esperienza nell'analisi di processi di business e nella realizzazione di progetti IT in diversi ambienti. Ciò che ci distingue è la nostra forte competenza tecnica unita all'approccio pragmatico per il raggiungimento del risultato.&lt;/p&gt;" preferDOM="true" sanitizeContent="false" visible="true" />
+          </layout:BlockLayoutCell>
+          <layout:BlockLayoutCell>
+            <layout:VerticalLayout width="100%">
+              <Text text="SAP R/3" class="technology-title" />
+              <FlexBox width="100%" class="technology-img-container">
+                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              </FlexBox>
+            </layout:VerticalLayout>
+          </layout:BlockLayoutCell>
+        </layout:BlockLayoutRow>
+      </layout:BlockLayout>
+    </content>
+  </Panel>
+</core:FragmentDefinition>

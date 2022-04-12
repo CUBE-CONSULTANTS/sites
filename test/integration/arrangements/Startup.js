@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("it.cubeconsultants.site.test.integration.arrangements.Startup",{iStartMyApp:function(){this.iStartMyUIComponent({componentConfig:{name:"it.cubeconsultants.site",async:true,manifest:true}})}})});
