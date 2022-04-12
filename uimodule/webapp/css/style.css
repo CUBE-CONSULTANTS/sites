@@ -21,7 +21,7 @@
 
 .bgImg{
   height: 22rem;
-  background-image:url('/resources/img/carousel-1.jpg');
+  background-image:url('./resources/img/carousel-1.jpg');
   background-size:cover;
   background-position: center;
 }
