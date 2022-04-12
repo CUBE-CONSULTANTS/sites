@@ -1,1 +1,60 @@
 /* Enter your custom styles here */
+.headerContainer{
+  position: absolute;
+  top:5rem;
+  right:2rem;
+  max-width:100%;
+  text-align:end;
+}
+.title{
+  font-size: 4rem;
+  color:white;
+}
+.subTitle{
+  font-size: 2rem;
+  color:white;
+}
+
+.p0 > div{
+  padding:0 !important;
+}
+
+.bgImg{
+  height: 22rem;
+  background-image:url('/resources/img/carousel-1.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+.toolbarSection{
+  justify-content: center;
+}
+
+.technology-container > div{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:start;
+}
+
+.technology-title {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.technology-img-container{
+  margin-top:3rem;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:end;
+}
+
+.who-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.who-text{
+  line-height: 1.5rem
+}

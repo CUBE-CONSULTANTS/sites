@@ -1,0 +1,19 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:layout="sap.ui.layout">
+  <layout:BlockLayout background="Mixed">
+    <layout:BlockLayoutRow>
+      <layout:BlockLayoutCell class="p0 bgImg">
+        <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
+        <!-- <Image src="./resources/img/carousel-1.jpg" height="22rem" class="imgHeader" /> -->
+        <!-- <Image src="./resources/img/carousel-2.jpg" height="22rem" class="imgHeader" /> -->
+        <!-- <Image src="./resources/img/carousel-3.jpg" height="22rem" class="imgHeader" /> -->
+        <!-- </Carousel> -->
+        <VBox class="headerContainer">
+          <Text text="{i18n>title}" class="title" />
+          <Text text="{i18n>subTitle}" class="subTitle" />
+          <Button width="100%" text="{i18n>footer.contactUs}" icon="sap-icon://paper-plane" iconFirst="false" type="Emphasized" press="onContactUs" />
+
+        </VBox>
+      </layout:BlockLayoutCell>
+    </layout:BlockLayoutRow>
+  </layout:BlockLayout>
+</c:FragmentDefinition>

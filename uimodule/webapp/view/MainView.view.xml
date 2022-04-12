@@ -1,11 +1,21 @@
- <mvc:View controllerName="it.cubeconsultants.site.controller.MainView"
-  displayBlock="true"
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
+<mvc:View controllerName="it.cubeconsultants.site.controller.MainView" displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core">
+  <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <customHeader>
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Bar" type="XML" />
+        </customHeader>
+        <content>
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Header" type="XML" />
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Technology" type="XML" />
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Who" type="XML" />
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.What" type="XML" />
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Consultants" type="XML" />
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Customers" type="XML" />
+        </content>
+        <footer>
+          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Footer" type="XML" />
+        </footer>
       </Page>
     </pages>
   </App>

@@ -1,0 +1,49 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:layout="sap.ui.layout">
+  <Panel class="p0">
+    <headerToolbar>
+      <Toolbar width="100%" design="Solid" class="toolbarSection">
+        <content>
+          <Title level="H2" text="{i18n>technology.title}" titleStyle="H3" />
+        </content>
+      </Toolbar>
+    </headerToolbar>
+    <content>
+      <layout:BlockLayout background="Mixed">
+        <layout:BlockLayoutRow>
+          <layout:BlockLayoutCell>
+            <layout:VerticalLayout width="100%">
+              <Text text="SAP" class="technology-title" />
+              <FlexBox width="100%" class="technology-img-container">
+                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              </FlexBox>
+            </layout:VerticalLayout>
+          </layout:BlockLayoutCell>
+          <layout:BlockLayoutCell>
+            <layout:VerticalLayout width="100%">
+              <Text text="SAP R/3" class="technology-title" />
+              <FlexBox width="100%" class="technology-img-container">
+                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              </FlexBox>
+            </layout:VerticalLayout>
+          </layout:BlockLayoutCell>
+          <layout:BlockLayoutCell>
+            <layout:VerticalLayout width="100%">
+              <Text text="SAP BTP" class="technology-title" />
+              <FlexBox width="100%" class="technology-img-container">
+                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              </FlexBox>
+            </layout:VerticalLayout>
+          </layout:BlockLayoutCell>
+          <layout:BlockLayoutCell>
+            <layout:VerticalLayout width="100%">
+              <Text text="SAP Fiori" class="technology-title" />
+              <FlexBox width="100%" class="technology-img-container">
+                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              </FlexBox>
+            </layout:VerticalLayout>
+          </layout:BlockLayoutCell>
+        </layout:BlockLayoutRow>
+      </layout:BlockLayout>
+    </content>
+  </Panel>
+</c:FragmentDefinition>
