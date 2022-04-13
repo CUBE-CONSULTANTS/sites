@@ -1,31 +1,31 @@
 {
 	"name": "site_uimodule",
 	"version": "0.0.2",
-	"buildTimestamp": "202204121156",
+	"buildTimestamp": "202204131021",
 	"scmRevision": "",
 	"libraries": [
 		{
 			"name": "sap.m",
 			"version": "1.84.0",
-			"buildTimestamp": "202204121156",
+			"buildTimestamp": "202204131021",
 			"scmRevision": ""
 		},
 		{
 			"name": "sap.ui.core",
 			"version": "1.84.0",
-			"buildTimestamp": "202204121156",
+			"buildTimestamp": "202204131021",
 			"scmRevision": ""
 		},
 		{
 			"name": "sap.ui.layout",
 			"version": "1.84.0",
-			"buildTimestamp": "202204121156",
+			"buildTimestamp": "202204131021",
 			"scmRevision": ""
 		},
 		{
 			"name": "sap.ui.unified",
 			"version": "1.84.0",
-			"buildTimestamp": "202204121156",
+			"buildTimestamp": "202204131021",
 			"scmRevision": ""
 		}
 	]
