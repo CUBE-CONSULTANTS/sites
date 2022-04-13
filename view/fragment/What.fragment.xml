@@ -12,7 +12,6 @@
         <layout:BlockLayoutRow>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-
               <ObjectStatus class="sapUiSmallMarginBottom" text="Analysis" icon="sap-icon://message-information" state="Error" />
               <ObjectStatus class="sapUiSmallMarginBottom" text="Prototipation" icon="sap-icon://projector" state="Information" />
               <ObjectStatus class="sapUiSmallMarginBottom" text="Implamantation" icon="sap-icon://projector" state="Success" />
