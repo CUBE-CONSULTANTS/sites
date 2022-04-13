@@ -1,80 +1,100 @@
 {
   "CustomersCollection": [
     {
-      "image": "./resources/img/customers/accenture.PNG",
-      "title": "Accenture",
+      "firstLine": {
+        "image": "./resources/img/customers/accenture.PNG",
+        "title": "Accenture"
+      },
       "secondLine": {
         "image": "./resources/img/customers/acea.png",
         "title": "Acea"
       }
     },
     {
-      "image": "./resources/img/customers/atos.png",
-      "title": "Atos",
+      "firstLine": {
+        "image": "./resources/img/customers/atos.png",
+        "title": "Atos"
+      },
       "secondLine": {
         "image": "./resources/img/customers/attune.png",
         "title": "Attune"
       }
     },
     {
-      "image": "./resources/img/customers/bgp.png",
-      "title": "BGP",
+      "firstLine": {
+        "image": "./resources/img/customers/bgp.png",
+        "title": "BGP"
+      },
       "secondLine": {
         "image": "./resources/img/customers/capgemini.svg",
         "title": "Capgemini"
       }
     },
     {
-      "image": "./resources/img/customers/engineering.png",
-      "title": "Engineering",
+      "firstLine": {
+        "image": "./resources/img/customers/engineering.png",
+        "title": "Engineering"
+      },
       "secondLine": {
         "image": "./resources/img/customers/erg.png",
         "title": "Erg"
       }
     },
     {
-      "image": "./resources/img/customers/exprivia.png",
-      "title": "Exprivia",
+      "firstLine": {
+        "image": "./resources/img/customers/exprivia.png",
+        "title": "Exprivia"
+      },
       "secondLine": {
         "image": "./resources/img/customers/fourfab.png",
         "title": "4Fab"
       }
     },
     {
-      "image": "./resources/img/customers/icms.png",
-      "title": "ICMS",
+      "firstLine": {
+        "image": "./resources/img/customers/icms.png",
+        "title": "ICMS"
+      },
       "secondLine": {
         "image": "./resources/img/customers/innovatesapp.png",
         "title": "InnovatesApp"
       }
     },
     {
-      "image": "./resources/img/customers/kpmg.webp",
-      "title": "KPMG",
+      "firstLine": {
+        "image": "./resources/img/customers/kpmg.webp",
+        "title": "KPMG"
+      },
       "secondLine": {
         "image": "./resources/img/customers/reply-syscoplan.png",
         "title": "Reply Syscoplan"
       }
     },
     {
-      "image": "./resources/img/customers/reply.png",
-      "title": "Reply",
+      "firstLine": {
+        "image": "./resources/img/customers/reply.png",
+        "title": "Reply"
+      },
       "secondLine": {
         "image": "./resources/img/customers/rfi.jpg",
         "title": "RFI"
       }
     },
     {
-      "image": "./resources/img/customers/simmel.png",
-      "title": "Simmel Difesa",
+      "firstLine": {
+        "image": "./resources/img/customers/simmel.png",
+        "title": "Simmel Difesa"
+      },
       "secondLine": {
         "image": "./resources/img/customers/sir.svg",
         "title": "SIR"
       }
     },
     {
-      "image": "./resources/img/customers/trenitalia.svg",
-      "title": "Trenitalia"
+      "firstLine": {
+        "image": "./resources/img/customers/trenitalia.svg",
+        "title": "Trenitalia"
+      }
     }
   ]
 }

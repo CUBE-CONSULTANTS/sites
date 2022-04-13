@@ -10,25 +10,20 @@
     <content>
       <Carousel height="auto" pages="{
 				path: 'customers>/CustomersCollection'
-			}" showPageIndicator="false">
+			}" loop="true">
         <customLayout>
           <CarouselLayout visiblePagesCount="{settings>/pagesCount}" />
         </customLayout>
         <l:VerticalLayout class="sapUiContentPadding" width="100%">
-          <f:Card visible="{=!!${customers>title}}">
-            <!-- 
-            <f:header>
-              <cards:Header title="{customers>Name}" subtitle="{customers>Status}" iconSrc="{customers>ProductPicUrl}" iconDisplayShape="Square" />
-            </f:header> 
-            -->
+          <f:Card visible="{=!!${customers>firstLine/title}}">
             <f:content>
               <l:VerticalLayout class="sapUiContentPadding" width="100%">
                 <l:BlockLayout>
                   <l:BlockLayoutRow>
                     <l:BlockLayoutCell>
                       <VBox>
-                        <Title text="{customers>title}" />
-                        <Image src="{customers>image}" width="auto" height="2rem" class="customers-img-container" />
+                        <Title text="{customers>firstLine/title}" />
+                        <Image src="{customers>firstLine/image}" width="auto" height="2rem" class="customers-img-container" />
                       </VBox>
                     </l:BlockLayoutCell>
                   </l:BlockLayoutRow>
