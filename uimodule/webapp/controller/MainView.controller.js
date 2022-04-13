@@ -9,21 +9,21 @@ sap.ui.define(
 
     return Controller.extend("it.cubeconsultants.site.controller.MainView", {
       onInit: function () {
-        var oProductsModel = new JSONModel(),
+        var oCustomersModel = new JSONModel(),
           iPagesCount = 1;
-        oProductsModel.loadData("./model/products.json", null, false);
+        oCustomersModel.loadData("./model/customers.json", null, false);
 
         if (Device.system.desktop) {
-          iPagesCount = 4;
+          iPagesCount = 6;
         } else if (Device.system.tablet) {
-          iPagesCount = 2;
+          iPagesCount = 4;
         }
 
         var oSettingsModel = new JSONModel({ pagesCount: iPagesCount });
-        oProductsModel.setSizeLimit(6);
+        // oCustomersModel.setSizeLimit(6);
 
         this.getView().setModel(oSettingsModel, "settings");
-        this.getView().setModel(oProductsModel, "products");
+        this.getView().setModel(oCustomersModel, "customers");
 
         // const oCarousel = this.getView().byId("carousel");
         // this._timeoutHandle(oCarousel);

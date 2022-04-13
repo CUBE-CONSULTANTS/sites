@@ -48,6 +48,10 @@
   justify-content:end;
 }
 
+.technology-detail-text{
+  justify-content: space-between !important;
+}
+
 /* WHO - SECTION */
 .who-title{
   font-size: 2.5rem;
@@ -56,4 +60,8 @@
 
 .who-text{
   line-height: 1.5rem
+}
+
+.customers-img-container{
+  float:right
 }
