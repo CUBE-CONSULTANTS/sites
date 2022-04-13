@@ -6,7 +6,17 @@
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Bar" type="XML" />
         </customHeader>
         <content>
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Header" type="XML" />
+          <Carousel id="carousel" loop="true" showPageIndicator="false">
+            <pages>
+              <FlexBox class="carousel-container">
+                <Image src="./resources/img/carousel-1.jpg" class="carousel-img" />
+                <Text text="titolo" class="carousel-title" />
+              </FlexBox>
+            </pages>
+
+            <Image src="./resources/img/carousel-2.jpg" class="carousel-img" />
+            <Image src="./resources/img/carousel-3.jpg" class="carousel-img" />
+          </Carousel>
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Technology" type="XML" />
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Who" type="XML" />
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.What" type="XML" />

@@ -1,42 +1,40 @@
-/* Enter your custom styles here */
-.headerContainer{
-  position: absolute;
-  top:5rem;
-  right:2rem;
-  max-width:100%;
-  text-align:end;
+/* HEADER - CAROUSEL */
+.carousel-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.title{
-  font-size: 4rem;
-  color:white;
-}
-.subTitle{
-  font-size: 2rem;
-  color:white;
-}
-
-.p0 > div{
-  padding:0 !important;
+.carousel-title {
+  position: fixed;
+  top: 70%;
+  right: 10%;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 0.5em #000;
 }
 
-.bgImg{
-  height: 22rem;
-  background-image:url(../resources/img/carousel-1.jpg);
-  background-size:cover;
-  background-position: center;
+.carousel-img{
+  object-fit: cover;
+  width: 100%;
+  height: auto
 }
 
+/* TOOLBAR - SECTION */
 .toolbarSection{
   justify-content: center;
 }
 
-.technology-container > div{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:start;
+/* COMMON */
+.p0 > div{
+  padding:0 !important;
 }
 
+
+/* TECHNOLOGY - SECTION */
 .technology-title {
   font-size: 1.5rem !important;
   font-weight: bold;
@@ -50,6 +48,7 @@
   justify-content:end;
 }
 
+/* WHO - SECTION */
 .who-title{
   font-size: 2.5rem;
   font-weight: bold;

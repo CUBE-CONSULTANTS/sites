@@ -11,7 +11,7 @@ sap.ui.define(
       onInit: function () {
         var oProductsModel = new JSONModel(),
           iPagesCount = 1;
-        oProductsModel.loadData("/model/products.json", null, false);
+        oProductsModel.loadData("./model/products.json", null, false);
 
         if (Device.system.desktop) {
           iPagesCount = 4;
@@ -24,6 +24,9 @@ sap.ui.define(
 
         this.getView().setModel(oSettingsModel, "settings");
         this.getView().setModel(oProductsModel, "products");
+
+        // const oCarousel = this.getView().byId("carousel");
+        // this._timeoutHandle(oCarousel);
       },
       onContactUs: () => {
         const mailConfig = {
@@ -36,6 +39,18 @@ sap.ui.define(
           `mailto:${mailConfig.to}?cc=${mailConfig.cc}&subject=${mailConfig.subject}&body=${mailConfig.body}`
         );
       },
+      // _timeoutHandle: (oCarousel) => {
+      //   // const oCarousel = this.getView().byId("carousel");
+      //   window.setInterval(
+      //     function () {
+      //       oCarousel.next();
+      //     }.bind(this),
+      //     2500
+      //   );
+      // },
+      // _pageChanged: function (e) {
+      //   this._timeoutHandle(e.getSource());
+      // },
     });
   }
 );
