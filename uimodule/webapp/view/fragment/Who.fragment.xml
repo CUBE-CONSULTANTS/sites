@@ -1,9 +1,18 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+    xmlns:core="sap.ui.core">
   <Panel class="p0">
     <headerToolbar>
-      <Toolbar width="100%" design="Solid" class="toolbarSection">
+      <Toolbar
+          width="100%"
+          design="Solid"
+          class="toolbarSection">
         <content>
-          <Title level="H2" text="{i18n>who.title}" titleStyle="H3" />
+          <Title
+              level="H2"
+              text="{i18n>who.title}"
+              titleStyle="H3" />
         </content>
       </Toolbar>
     </headerToolbar>
@@ -11,10 +20,28 @@
       <layout:BlockLayout background="Accent">
         <layout:BlockLayoutRow rowColorSet="ColorSet2">
           <layout:BlockLayoutCell>
-            <core:HTML content="&lt;p class=&quot;who-text&quot;&gt;&lt;span class=&quot;who-title&quot;&gt;Cube Consultants&lt;/span&gt;  opera nel settore dell'Information Technology, nasce dall'iniziativa di un gruppo di professionisti con una lunga esperienza nell'analisi di processi di business e nella realizzazione di progetti IT in diversi ambienti. Ciò che ci distingue è la nostra forte competenza tecnica unita all'approccio pragmatico per il raggiungimento del risultato.&lt;/p&gt;" preferDOM="true" sanitizeContent="false" visible="true" />
+            <core:HTML
+                content="&lt;p class=&quot;who-text&quot;&gt;&lt;span class=&quot;who-title&quot;&gt;Cube Consultants&lt;/span&gt; {i18n>who.overview}&lt;/p&gt;"
+                preferDOM="true"
+                sanitizeContent="false"
+                visible="true" />
+            <core:HTML
+                content="&lt;p class=&quot;who-text&quot;&gt;&lt;span class=&quot;who-title&quot;&gt;Mission&lt;/span&gt; {i18n>who.mission} &lt;/p&gt;"
+                preferDOM="true"
+                sanitizeContent="false"
+                visible="true" />
+            <core:HTML
+                content="&lt;p class=&quot;who-text&quot;&gt;&lt;span class=&quot;who-title&quot;&gt;Vision&lt;/span&gt; {i18n>who.vision} &lt;/p&gt;"
+                preferDOM="true"
+                sanitizeContent="false"
+                visible="true" />
+
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
-            <Image src="./resources/img/who-section-image.png" width="100%" height="auto" />
+            <Image
+                src="./resources/img/who-section-image.png"
+                width="100%"
+                height="auto" />
           </layout:BlockLayoutCell>
         </layout:BlockLayoutRow>
       </layout:BlockLayout>

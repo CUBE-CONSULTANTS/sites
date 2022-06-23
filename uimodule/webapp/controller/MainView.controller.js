@@ -10,8 +10,14 @@ sap.ui.define(
     return Controller.extend("it.cubeconsultants.site.controller.MainView", {
       onInit: function () {
         var oCustomersModel = new JSONModel(),
+          oProcessFlowModel = new JSONModel(),
           iPagesCount = 1;
         oCustomersModel.loadData("./model/customers.json", null, false);
+        oProcessFlowModel.loadData(
+          "./model/ProcessFlowNodes.json",
+          null,
+          false
+        );
 
         if (Device.system.desktop) {
           iPagesCount = 6;
@@ -24,6 +30,7 @@ sap.ui.define(
 
         this.getView().setModel(oSettingsModel, "settings");
         this.getView().setModel(oCustomersModel, "customers");
+        this.getView().setModel(oProcessFlowModel, "processFlowModel");
 
         // const oCarousel = this.getView().byId("carousel");
         // this._timeoutHandle(oCarousel);

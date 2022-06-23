@@ -1,9 +1,19 @@
-<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:layout="sap.ui.layout">
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+    xmlns:commons="sap.suite.ui.commons">
   <Panel class="p0">
     <headerToolbar>
-      <Toolbar width="100%" design="Solid" class="toolbarSection">
+      <Toolbar
+          width="100%"
+          design="Solid"
+          class="toolbarSection">
         <content>
-          <Title level="H2" text="{i18n>what.title}" titleStyle="H3" />
+          <Title
+              level="H2"
+              text="{i18n>what.title}"
+              titleStyle="H3" />
         </content>
       </Toolbar>
     </headerToolbar>
@@ -12,16 +22,54 @@
         <layout:BlockLayoutRow>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <ObjectStatus class="sapUiSmallMarginBottom" text="Analysis" icon="sap-icon://message-information" state="Error" />
+              <!-- <ObjectStatus class="sapUiSmallMarginBottom" text="Analysis" icon="sap-icon://message-information" state="Error" />
               <ObjectStatus class="sapUiSmallMarginBottom" text="Prototipation" icon="sap-icon://projector" state="Information" />
-              <ObjectStatus class="sapUiSmallMarginBottom" text="Implamantation" icon="sap-icon://projector" state="Success" />
+              <ObjectStatus class="sapUiSmallMarginBottom" text="Implamantation" icon="sap-icon://projector" state="Success" /> -->
+
+              <!-- wheelZoomable="false"
+              showLabels="true" -->
+              <commons:ProcessFlow
+                  scrollable="false"
+                  nodes="{processFlowModel>/nodes}"
+                  lanes="{processFlowModel>/lanes}"
+                  headerPress="onHeaderPress">
+                <commons:nodes>
+                  <commons:ProcessFlowNode
+                      laneId="{processFlowModel>lane}"
+                      nodeId="{processFlowModel>id}"
+                      title="{processFlowModel>title}"
+                      children="{processFlowModel>children}"
+                      state="{processFlowModel>state}"
+                      stateText="{processFlowModel>stateText}"
+                      texts="{processFlowModel>texts}"
+                      focused="{processFlowModel>focused}" />
+                </commons:nodes>
+                <commons:lanes>
+                  <commons:ProcessFlowLaneHeader
+                      laneId="{processFlowModel>id}"
+                      iconSrc="{processFlowModel>icon}"
+                      text="{processFlowModel>label}"
+                      position="{processFlowModel>position}"
+                      state="{processFlowModel>state}" />
+                </commons:lanes>
+                <commons:ariaProperties>
+                  <commons:AriaProperties role="{i18n>ARIA.processFlow}" />
+                </commons:ariaProperties>
+              </commons:ProcessFlow>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP R/3" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              <Text
+                  text="SAP R/3"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-sap.png"
+                    width="5rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
