@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+  <Panel
+      id="quickViewCardContainer"
+      width="auto"
+      height="650px">
+    <QuickViewCard
+        id="quickViewCard"
+        pages="{ path: 'contactInfo>/pages', templateShareable : true }"
+        navigate=".onNavigate"
+        afterNavigate=".onAfterNavigate">
+      <QuickViewPage
+          pageId="{contactInfo>pageId}"
+          header="{contactInfo>header}"
+          title="{contactInfo>title}"
+          titleUrl="{contactInfo>titleUrl}"
+          description="{contactInfo>description}"
+          groups="{
+					path: 'contactInfo>groups',
+					templateShareable: true
+				}">
+        <avatar>
+          <Avatar
+              src="{contactInfo>icon}"
+              displayShape="{contactInfo>displayShape}" />
+        </avatar>
+        <QuickViewGroup
+            heading="{contactInfo>heading}"
+            elements="{ path: 'contactInfo>elements', templateShareable: true }">
+          <QuickViewGroupElement
+              label="{contactInfo>label}"
+              value="{contactInfo>value}"
+              url="{contactInfo>url}"
+              type="{contactInfo>elementType}"
+              pageLinkId="{contactInfo>pageLinkId}"
+              emailSubject="{contactInfo>emailSubject}"
+              target="{contactInfo>target}" />
+        </QuickViewGroup>
+      </QuickViewPage>
+    </QuickViewCard>
+  </Panel>
+</core:FragmentDefinition>

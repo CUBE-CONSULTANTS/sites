@@ -1,0 +1,26 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+  <Carousel
+      id="carousel"
+      loop="true"
+      showPageIndicator="false">
+    <pages>
+      <FlexBox class="carousel-container">
+        <Image
+            src="./resources/img/carousel-1.jpg"
+            class="carousel-img" />
+        <Text
+            text="titolo"
+            class="carousel-title" />
+      </FlexBox>
+    </pages>
+
+    <Image
+        src="./resources/img/carousel-2.jpg"
+        class="carousel-img" />
+    <Image
+        src="./resources/img/carousel-3.jpg"
+        class="carousel-img" />
+  </Carousel>
+</c:FragmentDefinition>

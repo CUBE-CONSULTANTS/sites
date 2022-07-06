@@ -1,0 +1,31 @@
+<c:FragmentDefinition
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:vbm="sap.ui.vbm"
+    xmlns:layout="sap.ui.layout">
+  <layout:Grid defaultSpan="XL6 L6 M12 S12">
+    <layout:content>
+      <vbm:AnalyticMaps
+          height="650px"
+          initialPosition="12.487835057672863;41.844338019136714;0"
+          initialZoom="5">
+        <vbm:vos>
+          <vbm:Spots items="{maps>/Spots}">
+            <vbm:Spot
+                position="{maps>pos}"
+                contentOffset="{maps>contentOffset}"
+                type="{maps>type}"
+                scale="{maps>scale}"
+                tooltip="{maps>tooltip}"
+                image="{maps>image}"
+                icon="{maps>icon}" />
+          </vbm:Spots>
+        </vbm:vos>
+      </vbm:AnalyticMaps>
+      <c:Fragment
+          fragmentName="it.cubeconsultants.site.view.fragment.QuickView"
+          type="XML" />
+    </layout:content>
+  </layout:Grid>
+
+</c:FragmentDefinition>

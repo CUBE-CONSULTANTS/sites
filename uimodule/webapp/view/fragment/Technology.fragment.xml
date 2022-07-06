@@ -1,9 +1,18 @@
-<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:layout="sap.ui.layout">
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:layout="sap.ui.layout">
   <Panel class="p0">
     <headerToolbar>
-      <Toolbar width="100%" design="Solid" class="toolbarSection">
+      <Toolbar
+          width="100%"
+          design="Solid"
+          class="toolbarSection">
         <content>
-          <Title level="H2" text="{i18n>technology.title}" titleStyle="H3" />
+          <Title
+              level="H2"
+              text="{i18n>technology.title}"
+              titleStyle="H3" />
         </content>
       </Toolbar>
     </headerToolbar>
@@ -12,33 +21,61 @@
         <layout:BlockLayoutRow>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP R/3" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              <Text
+                  text="SAP R/3"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-sap.png"
+                    width="5rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP BTP" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              <Text
+                  text="SAP BTP"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-sap.png"
+                    width="5rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP Fiori" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo_ui5.png" width="3rem" height="100%" />
+              <Text
+                  text="SAP Fiori"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo_ui5.png"
+                    width="3rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP CPI" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-cpi.png" width="4rem" height="100%" />
+              <Text
+                  text="SAP CPI"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-cpi.png"
+                    width="4rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
@@ -46,16 +83,27 @@
         <layout:BlockLayoutRow>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP Mobile Services" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+              <Text
+                  text="SAP Mobile Services"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-sap.png"
+                    width="5rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="SAP Modules (PM, MM, SD, HCM, PP, QM)" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
+              <Text
+                  text="SAP Modules (PM, MM, SD, HCM, PP, QM)"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
                 <!-- technology-detail-text -->
                 <!-- <HBox>
                   <List backgroundDesign="Transparent">
@@ -72,23 +120,40 @@
                     <StandardListItem title="QM" />
                   </List>
                 </HBox> -->
-                <Image src="./resources/img/logo-sap.png" width="5rem" height="100%" />
+                <Image
+                    src="./resources/img/logo-sap.png"
+                    width="5rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="NodeJS" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-nodejs.svg" width="8rem" height="100%" />
+              <Text
+                  text="NodeJS"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-nodejs.svg"
+                    width="8rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>
           <layout:BlockLayoutCell>
             <layout:VerticalLayout width="100%">
-              <Text text="ReactJS" class="technology-title" />
-              <FlexBox width="100%" class="technology-img-container">
-                <Image src="./resources/img/logo-react.svg" width="4rem" height="100%" />
+              <Text
+                  text="ReactJS"
+                  class="technology-title" />
+              <FlexBox
+                  width="100%"
+                  class="technology-img-container">
+                <Image
+                    src="./resources/img/logo-react.svg"
+                    width="4rem"
+                    height="100%" />
               </FlexBox>
             </layout:VerticalLayout>
           </layout:BlockLayoutCell>

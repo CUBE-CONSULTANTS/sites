@@ -1,30 +1,44 @@
-<mvc:View controllerName="it.cubeconsultants.site.controller.MainView" displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core">
+<mvc:View
+    controllerName="it.cubeconsultants.site.controller.MainView"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
   <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
         <customHeader>
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Bar" type="XML" />
+          <core:Fragment
+              fragmentName="it.cubeconsultants.site.view.fragment.Bar"
+              type="XML" />
         </customHeader>
         <content>
-          <Carousel id="carousel" loop="true" showPageIndicator="false">
-            <pages>
-              <FlexBox class="carousel-container">
-                <Image src="./resources/img/carousel-1.jpg" class="carousel-img" />
-                <Text text="titolo" class="carousel-title" />
-              </FlexBox>
-            </pages>
-
-            <Image src="./resources/img/carousel-2.jpg" class="carousel-img" />
-            <Image src="./resources/img/carousel-3.jpg" class="carousel-img" />
-          </Carousel>
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Technology" type="XML" />
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Who" type="XML" />
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.What" type="XML" />
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Consultants" type="XML" />
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Customers" type="XML" />
+          <VBox visible="false">
+            <core:Fragment
+                fragmentName="it.cubeconsultants.site.view.fragment.Technology"
+                type="XML" />
+            <core:Fragment
+                fragmentName="it.cubeconsultants.site.view.fragment.Who"
+                type="XML" />
+            <core:Fragment
+                fragmentName="it.cubeconsultants.site.view.fragment.What"
+                type="XML" />
+            <core:Fragment
+                fragmentName="it.cubeconsultants.site.view.fragment.Consultants"
+                type="XML" />
+            <core:Fragment
+                fragmentName="it.cubeconsultants.site.view.fragment.Customers"
+                type="XML" />
+          </VBox>
+          <core:Fragment
+              fragmentName="it.cubeconsultants.site.view.fragment.Contact"
+              type="XML" />
         </content>
         <footer>
-          <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Footer" type="XML" />
+          <core:Fragment
+              fragmentName="it.cubeconsultants.site.view.fragment.Footer"
+              type="XML" />
         </footer>
       </Page>
     </pages>

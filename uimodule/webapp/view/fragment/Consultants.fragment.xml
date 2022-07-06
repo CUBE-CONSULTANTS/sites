@@ -1,1 +1,5 @@
-<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core"></c:FragmentDefinition>
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+  <Title text="titolo" />
+</c:FragmentDefinition>
