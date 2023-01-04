@@ -1,10 +1,10 @@
 <c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core">
   <Bar design="Header">
     <contentLeft>
-      <Title level="H1" text="Cube Consultants" titleStyle="H3" />
+      <Title level="H1" text="GOTONEXT" titleStyle="H3" />
     </contentLeft>
     <contentRight>
-      <Image src="./resources/img/logo.png" height="100%" />
+      <Image src="./resources/img/logoblu.jpg" height="100%" />
     </contentRight>
   </Bar>
 </c:FragmentDefinition>
