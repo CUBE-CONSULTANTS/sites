@@ -9,13 +9,13 @@
           <Carousel id="carousel" loop="true" showPageIndicator="false">
             <pages>
               <FlexBox class="carousel-container">
-                <Image src="./resources/img/carousel-1.jpg" class="carousel-img" />
-                <Text text="titolo" class="carousel-title" />
+                <Image src="./resources/img/carousel-0.jpg" class="carousel-img" />
+                <Text text="" class="carousel-title" />
               </FlexBox>
             </pages>
 
+            <Image src="./resources/img/carousel-1.jpg" class="carousel-img" />
             <Image src="./resources/img/carousel-2.jpg" class="carousel-img" />
-            <Image src="./resources/img/carousel-3.jpg" class="carousel-img" />
           </Carousel>
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Technology" type="XML" />
           <core:Fragment fragmentName="it.cubeconsultants.site.view.fragment.Who" type="XML" />
